@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,500;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+section{
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+/* navbar-section */
+.navbar-brand{
+    color:turquoise;
+    font-weight: 800;
+}
+.navbar .nav-link {
+    color:turquoise;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* pricing-section */
+#pricing{
+    height: auto;
+    padding: 30px;
+    max-width: 1440px;
+    background-color:rgba(188, 196, 200,0.3);
+    padding-top: 6em;
+}
+#pricing h4{
+    padding-top: 16px;
+    color: turquoise;
+    line-height: 28px;
+}
+
+
+
+@media (min-width: 992px){
+    /* navbar */
+    .nav-link{
+        margin-left: 35px;
+    }
+}

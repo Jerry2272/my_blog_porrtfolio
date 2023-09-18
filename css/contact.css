@@ -54,8 +54,11 @@ img{
     background-size: cover;
     background-attachment: fixed;
     max-width: 1440px;
-    height: auto;
+    height: 100vh;
     color: #fff;
+    display: flex;
+    align-items: center;
+    padding-top: 13em;
 }
 #contact-me img{
     height: auto;

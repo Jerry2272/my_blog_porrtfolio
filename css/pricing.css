@@ -20,14 +20,22 @@ img{
     object-fit: cover;
 }
 /* navbar-section */
-.navbar-brand{
-    color:turquoise;
-    font-weight: 800;
+.navbar{
+    height: 85px;
+    padding: 15px;
+}
+.navbar-brand img{
+    width: 150px;
+   height: auto;
 }
 .navbar .nav-link {
-    color:turquoise;
+    /* color:rgb(0, 0, 146); */
+    color: #fff;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 800; 
+}
+.navbar .nav-link.active{
+    color: #face30;
 }
 
 
@@ -71,9 +79,15 @@ img{
         border: 0;
         font-size: smaller;
     }
-    .navbar-brand{
-        font-size: smaller;
+    span.navbar-toggler-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
     }
+    .navbar-brand img{
+    width: 150px;
+   height: 62px;
+}
     .text{
         font-size: x-large;
         margin-top: 10px;

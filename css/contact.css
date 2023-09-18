@@ -21,25 +21,34 @@ html{
     scroll-behavior: smooth;
 }
 img{
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     object-fit: cover;
 }
 /* navbar-section */
-.navbar-brand{
-    color:turquoise;
-    font-weight: 800;
+/* navbar-section */
+.navbar{
+    height: 85px;
+    padding: 15px;
+}
+.navbar-brand img{
+    width: 150px;
+   height: auto;
 }
 .navbar .nav-link {
-    color:turquoise;
+    /* color:rgb(0, 0, 146); */
+    color: #fff;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 800; 
+}
+.navbar .nav-link.active{
+    color: #face30;
 }
 
 
 /* .....contact-me */
 #contact-me{
-    background: linear-gradient(0deg, rgba(40, 17, 61, 0.52),rgba(37, 18, 207, 0.32)), url("../Image/Coding_bg.jpg");
+    background: radial-gradient( rgba(40, 17, 61, 1),rgba(37, 18, 207, 0.32)), url("../Image/jerry-logoo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,12 +64,13 @@ img{
 .input-group{
     margin-bottom: 30px;
     position: relative;
+    color: #fff;
     /* transition: all 0.74s ease-out; */
 }
 input,textarea{
     width: 100%;
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #face30;
     /* height: 54px; */
     padding: 10px;
     color: #fff;
@@ -111,7 +121,7 @@ textarea:valid~label{
 
 /* footer-section */
 footer{
-    background: linear-gradient(0deg, rgba(40, 17, 61, 0.52),rgba(37, 18, 207, 0.32)), url("../Image/code.jpg");
+    /* background: linear-gradient(0deg, rgba(40, 17, 61, 0.52),rgba(37, 18, 207, 0.32)), url("../Image/code.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,12 +208,18 @@ footer ul li:hover{
 
 
 @media (max-width: 568px){
-.navbar-toggler{
-    border: 0;
-    font-size: smaller;
-}
-.navbar-brand{
-    font-size: smaller;
+    .navbar-toggler{
+        border: 0;
+        font-size: smaller;
+    }
+    span.navbar-toggler-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+    }
+    .navbar-brand img{
+    width: 150px;
+   height: 62px;
 }
 .text{
     font-size: x-large;

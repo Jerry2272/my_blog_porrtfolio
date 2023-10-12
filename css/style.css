@@ -184,6 +184,7 @@ ul{
 #portfolio a{
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 12px;
 }
 .empty_div_content img{
     border-radius: 30px;
@@ -244,6 +245,14 @@ footer{
 }
 footer h6{
     letter-spacing: 0.5em;
+}
+
+footer .icon{
+    display: flex;
+    justify-content: center;
+}
+footer .icon i{
+    margin: 10px;
 }
 
 footer ul li:hover{

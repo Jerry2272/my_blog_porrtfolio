@@ -45,10 +45,13 @@ img{
     color: #face30;
 }
 
-
+input::placeholder{
+    text-align: end;
+    color: #fff;
+}
 /* .....contact-me */
 #contact-me{
-    background: radial-gradient( rgba(40, 17, 61, 1),rgba(37, 18, 207, 0.32)), url("../Image/jerry-logoo.png");
+    background: linear-gradient( rgba(0, 0, 0, 1),rgba(0, 0, 07, 0.62)), url("../Image/jerry-logoo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,10 +73,14 @@ img{
     color: #fff;
     /* transition: all 0.74s ease-out; */
 }
+input{
+    border-radius: 200px;
+
+}
 input,textarea{
     width: 100%;
     background: transparent;
-    border: 1px solid #face30;
+    border: 1px solid #fff;
     /* height: 54px; */
     padding: 10px;
     color: #fff;
@@ -137,7 +144,13 @@ footer{
 footer h6{
     letter-spacing: 0.5em;
 }
-
+footer .icon{
+    display: flex;
+    justify-content: center;
+}
+footer .icon i{
+    margin: 10px;
+}
 footer ul li:hover{
    text-decoration: underline;
    text-decoration-color: #face30;
@@ -157,8 +170,6 @@ footer ul li:hover{
     background-color: blue;
     padding: 10px 10px;
     border-radius: 100px;
-    /* width: 30px;
-    height: 30px; */
 }
 .icons .fa-whatsapp{
     background-color: green;

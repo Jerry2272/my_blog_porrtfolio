@@ -28,6 +28,7 @@ ul{
     /* display: flex;
     overflow: hidden;
     align-items: center; */
+    background:linear-gradient(to right ,rgba(15, 4, 82, 0.80),rgb(62, 224, 207));
 }
 
 .navbar-brand img{
@@ -49,7 +50,7 @@ ul{
     height: 100vh;
     max-width: 1440px;
     width: 100%;
-    /* background:linear-gradient(to right ,rgba(255, 255, 255, 0.2),#40e0d0) ; */
+    background:linear-gradient(to left ,rgba(15, 4, 82, 0.80),rgba(62, 224, 207,1));
     /* background: turquoise; */
     /* background: linear-gradient( rgba(0, 0, 0,0.50),rgba(0, 0, 0,0.50)), url("../Image/bg_blog.jpg"); */
     /* background: linear-gradient(rgba(0, 0, 0,0.02),rgba(0, 0, 0,0.1)); */
@@ -62,6 +63,9 @@ ul{
     align-items: center;
     position: relative;
     overflow: hidden;
+}
+.di{
+    margin-top: 200px;
 }
 .video-overlay{
     width: 100%;
@@ -120,6 +124,9 @@ ul{
     .jerry .btn{
         padding: auto auto;
         border-radius: 4px;
+        background:linear-gradient(to right ,rgba(15, 4, 82, 0.80),rgb(62, 224, 207));
+        color: white;
+        font-weight: bolder;
     }
 @keyframes slide{
     100%{
@@ -329,9 +336,16 @@ footer ul li:hover{
     margin-left: -90px;
 }
 .jerry-p{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    /* width: 100%;
+    height: 100%; */
+    /* object-fit: cover; */
+    /* filter: brightness(); */
+    /* border-radius: 50%; */
+}
+#home .p-img{
+    max-width: 100%;
+    /* height: 300px; */
+    /* overflow: hidden; */
 }
 
 

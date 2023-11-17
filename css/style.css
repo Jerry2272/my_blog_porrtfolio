@@ -47,7 +47,6 @@ ul{
 
 /* home-section */
 #home{
-    height: 100vh;
     max-width: 1440px;
     width: 100%;
     background:linear-gradient(to right ,rgba(15, 4, 82, 0.80),rgba(62, 224, 207,1));
@@ -59,10 +58,6 @@ ul{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
 }
 .di{
     /* margin-top: 200px; */
@@ -194,7 +189,7 @@ ul{
     font-size: 12px;
 }
 .empty_div_content img{
-    border-radius: 30px;
+    border-radius: 8px;
     position: relative;
     object-fit: cover;
     object-position: top bottom;
@@ -206,25 +201,40 @@ ul{
 .empty_div_content{
     position: relative;
     cursor: pointer;
-    transition: all 0.94s;
+    transition: all 0.4s;
 }
 .empty_div_content:hover .empty_div{
-    display: block;
+    /* display: block; */
+    height: 100%;
+}
+#portfolio .empty_div:hover .divv{
+   opacity: 1;
 }
 /* .empty_div:hover  .para{
     display: none;
 } */
 .empty_div{
     position: absolute;
-    background: linear-gradient(0deg, rgba(150, 127, 170, 0.80),rgba(250, 206, 48, 1));
+    background:linear-gradient(to right ,rgba(15, 4, 82, 0.80),rgb(62, 224, 207));
     width: 100%;
-    max-height: 400px;
+    /* max-height: 400px; */
     color: #face30;
     font-size: 20px;
     inset: 0;
-    display: none;
-    border-radius: 50px;
+    /* display: none; */
     font-weight: 900;
+    height: 0;
+    transition: all 0.4s;
+}
+#portfolio .empty_div .divv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    opacity: 0;
+}
+.item{
+    margin-left: 20px;
 }
 .empty_div p{
     padding-top: 5em;
@@ -363,15 +373,23 @@ footer ul li:hover{
     .jerry .btn{
         margin-left: 15px;
     }
+    #home{
+         height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
     /* portfolio */
     #portfolio p{
         width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
     #portfolio img{
-        width: 500px;
-        height: 200px;
+        /* width: 500px; */
+        height: 250px;
+        border-radius: none;
     }
     .icons{
         position: fixed;
@@ -392,6 +410,30 @@ footer ul li:hover{
 
 
 @media (max-width: 568px){
+    /* home section  */
+    #home{
+        /* height: 110vh; */
+        padding-top: 6em;
+        padding-bottom: 6em;
+        position: relative;
+    }
+    #home .p-img {
+        position: relative;
+    }
+    #home ul .p{
+        position: relative;
+        z-index: 1;
+    }
+    #home .p-img img{
+        position: absolute;
+        /* top: -19em; */
+        height: 200px;
+        bottom: 0;
+        transform: translateY(80px);
+    }
+    .offcanvas-body{
+        padding-bottom: 40px;
+    }
     .navbar-toggler{
         border: 0;
         font-size: smaller;

@@ -18,7 +18,7 @@
 
 <body>
  <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-light text-white fixed-top">
+ <nav class="navbar navbar-expand-lg navbar-light text-white fixed-top shadow">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="Image/jerry-logoo.png" alt="" class="img-fluid">
@@ -95,7 +95,8 @@
           <img src="Image/me-eyeglass.png" alt="" class="pt-4">
           <div>
             <a href="https://docs.google.com/document/d/14xmLdVtb9wkNYRbE1ncO6Xwh5qW75nNYddRXOQZRyQA/edit?usp=sharing"
-              target="_blank" class="btn btn-learn mt-4" download style="background-color: lightcoral; color: #fff;">
+        border-radius: 4px;
+              target="_blank" class="btn btn-learn mt-4 fw-bolder" download style="  background:linear-gradient(to right ,rgba(15, 4, 82, 0.80),rgb(62, 224, 207)); color: #fff;">
               <span><i class="fa-solid fa-open"></i></span>
               <span> Open My Cv</span>
               <span class="ms-3">
@@ -112,13 +113,13 @@
                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="text-white"
                   style="text-decoration: none;">
                   <i class="fa-solid fa-envelope pt-5" title="Email"></i>
-                  <span class="fw-bold ms-2">:jerryjake227@gmail.com</span>
+                  <span class="fw-bold ms-1">:jerryjake227@gmail.com</span>
               </div>
             </a>
           </div>
         </div>
-        <div class="col-lg-8 about_section">
-          <h2 class="fw-bold">About Me</h2>
+        <div class="col-lg-8 about_section p-4 order-first order-lg-last">
+          <h2 class="fw-bold text-warning">About Me</h2>
           <p class="fw-bold">
             Hello, I'm Jerry, a dedicated front-end developer based in Nigeria. With over 2 years of experience in web development, I specialize in helping clients and individuals create and maintain websites. I'm committed to delivering high-quality work and am driven by a genuine enthusiasm for coding. My expertise lies in crafting responsive and visually appealing websites, and I'm always eager to stay updated with the latest industry trends and technologies. I take pride in my ability to transform ideas into user-friendly and dynamic web solutions. If you're seeking a passionate and skilled developer to enhance your online presence, I'm here to help.
 
@@ -134,7 +135,7 @@
             organization.
           </p>
           <hr>
-          <h2>Fun Facts</h2>
+          <h2 class="fw-bold text-warning">Fun Facts</h2>
           <ul style="list-style: disc;">
             <li>I have a passion for business and the tech industry.</li>
             <li>I love coding and always like teaching and enlightened others about coding</li>
@@ -151,7 +152,7 @@
             <span>Follow my page</span>
           </a>
           <hr>
-          <h2 id="skill">Technical ToolBar</h2>
+          <h2 id="skill" class="text-warning fw-bold">Technical ToolBar</h2>
           <ul style="list-style: disc;" class="mt-4 skill">
             <li>Html 5 </li>
             <div class="progress">
@@ -173,6 +174,11 @@
               <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="50"
                 aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+            <li>React</li>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </ul>
         </div>
       </div>
@@ -183,13 +189,13 @@
   <!-- section/offer -->
   <section id="offer">
     <div class="container">
-      <h1 class="display-5 text-center my-5 py-5">WHAT I OFFER</h1>
+      <h1 class="display-5 text-center my-5 py-5 text-warning">WHAT I OFFER</h1>
       <div class="row">
         <div class="col-lg-4 text-center offer-col">
           <img src="Image/design.jpg" alt="">
           <h2>Web Developer</h2>
           <p>
-            I have extensive knowledge in web developing and fundamentals, such as color theory and yprface with the
+            I have extensive knowledge in web developing and fundamentals, such as color theory and typeface with the
             ability to include responsive designs. I am also familiar with Bootstrap and other tech skills.
           </p>
         </div>
@@ -197,8 +203,8 @@
           <img src="Image/code.jpg" alt="">
           <h2>CODE</h2>
           <p>
-            I currently know the fundamentals of Javascript as a well as adding some functionality.These tools alllow me
-            to construct websites with some features features.
+            I currently know the fundamentals of Javascript as a well as adding some functionality.These tools allow me
+            to construct websites with some features.
           </p>
         </div>
         <div class="col-lg-4 text-center offer-col">
@@ -207,7 +213,7 @@
           <p>
             I also offer online classes for people who are ready to learn new skills like coding as a web developer.
             I also learn the ability in making suggestions for client if in case your looking for a better ideas of how
-            you website should look like.
+            your website should look like.
           </p>
         </div>
       </div>
@@ -221,7 +227,7 @@
           </p>
           <p>
             I also help retalate coding problems due to experience, I also try my possible best to solve errors and
-            problem in coding and make it easier for beginners
+            problem in coding and make it easier for beginners. For past years now have been engage in solving tech issues and relatively to codes am a very special codist, you can call Jerry the CodeDoc
           </p>
         </div>
         <div class="col-lg-12">
@@ -479,7 +485,7 @@
       <hr style="color: white;">
       <div class="row">
         <div class="col-lg-3 text-center">
-          <h4 class="text-uppercase text-lg-start text-white fw-bold fs-1">About Me</h4>
+          <h4 class="text-uppercase text-lg-start text-warning fw-bold fs-1">About Me</h4>
           <ul class="text-lg-start p-2">
             <li><a href="#" class="text-white-50">Who am I</a></li>
             <li><a href="#" class="text-white-50">How I work</a></li>
@@ -488,14 +494,14 @@
           </ul>
         </div>
         <div class="col-lg-3 text-center">
-          <h4 class="text-uppercase text-lg-start text-white fw-bold fs-1">Services</h4>
+          <h4 class="text-uppercase text-lg-start text-warning fw-bold fs-1">Services</h4>
           <ul class="text-lg-start p-2">
             <li><a href="#" class="text-white-50">Web Development</a></li>
             <li><a href="#" class="text-white-50">Code Doctor/analysis</a></li>
           </ul>
         </div>
         <div class="col-lg-3 text-center">
-          <h4 class="text-uppercase text-lg-start text-white fw-bold fs-1">Portfolio</h4>
+          <h4 class="text-uppercase text-lg-start text-warning fw-bold fs-1">Portfolio</h4>
           <ul class="text-lg-start p-2">
             <li><a href="#" class="text-white-50">Selected Work</a></li>
             <li><a href="#" class="text-white-50">Case Studies</a></li>
@@ -503,7 +509,7 @@
           </ul>
         </div>
         <div class="col-lg-3 text-center">
-          <h4 class="text-uppercase text-lg-start text-white fw-bold fs-1">Contact</h4>
+          <h4 class="text-uppercase text-lg-start text-warning fw-bold fs-1">Contact</h4>
           <ul class="text-lg-start p-2">
             <li><a href="#" class="text-white-50">Quote request</a></li>
             <li><a href="#" class="text-white-50">Payment Info</a></li>

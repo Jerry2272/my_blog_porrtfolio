@@ -50,7 +50,7 @@ ul{
     height: 100vh;
     max-width: 1440px;
     width: 100%;
-    background:linear-gradient(to left ,rgba(15, 4, 82, 0.80),rgba(62, 224, 207,1));
+    background:linear-gradient(to right ,rgba(15, 4, 82, 0.80),rgba(62, 224, 207,1));
     /* background: turquoise; */
     /* background: linear-gradient( rgba(0, 0, 0,0.50),rgba(0, 0, 0,0.50)), url("../Image/bg_blog.jpg"); */
     /* background: linear-gradient(rgba(0, 0, 0,0.02),rgba(0, 0, 0,0.1)); */
@@ -65,7 +65,7 @@ ul{
     overflow: hidden;
 }
 .di{
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 .video-overlay{
     width: 100%;
@@ -85,7 +85,7 @@ ul{
 /* Auto-typing-section */
 .main{
     display: flex;
-    justify-content: center;
+    /* justify-content: ; */
 }
 .main .option{
     line-height: 90px;
@@ -343,9 +343,15 @@ footer ul li:hover{
     /* border-radius: 50%; */
 }
 #home .p-img{
-    max-width: 100%;
-    /* height: 300px; */
+    /* max-width: 100%; */
+    /* height: 100%; */
     /* overflow: hidden; */
+    position: relative;
+}
+#home .p-img img{
+    /* height: 100%; */
+    position: absolute;
+    right: 0;
 }
 
 
